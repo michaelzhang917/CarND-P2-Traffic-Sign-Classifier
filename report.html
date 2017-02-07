@@ -25240,7 +25240,8 @@ qwAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Not really. It only achieve 40% accuracy.</p>
+<p><strong>Answer:</strong> From the prediction I did to the candidate image, the testing accuracy is 40%, however, the model prediction accuracy on the training set was 97%.
+As a result,  I believe my model did not perform well in the real world situation. One possible reason would be the condidate image is not close to the training image. For example, the second candidate image is 70 km speed limit sign but the number "70" is smaller than usual ones and there is also a text "kmph" below. Another possible reason would be the condidate image is not centered such as the last one.</p>
 
 </div>
 </div>
@@ -38872,7 +38873,7 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> Only the first prediction is certain and others are not based on the softmax probabilities. In addition, only image 4 was incorrect classified but the correct prediction is shown in first 3 prediction.</p>
+<p><strong>Answer:</strong> Only the first prediction is certain and others are not based on the softmax probabilities. For example, the first softmax probability value for the first candidate image is much larger than other two values for it. The first and second softmax probability values for the second candidate image is much larger than the third value for it. All first three softmax probability value are almost equal for the rest three candidate images. In addition, image 4 was incorrect classified but the correct prediction is shown in first 3 prediction.</p>
 
 </div>
 </div>
